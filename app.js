@@ -43,7 +43,9 @@ class CloseMoreApp {
     let loadedSuccessfully = false;
     if (savedState && savedState !== '[object Object]') {
       try {
-        this.state = JSON.parse(savedState);
+        // Merge parsed state OVER the defaults so older saves missing newer
+        // keys (e.g. themePreference, teamTasks) don't crash later renders.
+        this.state = Object.assign({}, this.state, JSON.parse(savedState));
         loadedSuccessfully = true;
       } catch (e) {
         console.error("Failed to parse saved state from localStorage:", e);
@@ -222,17 +224,20 @@ class CloseMoreApp {
       this.navigateTo('homepage');
     });
     
-    document.getElementById('nav-link-services').addEventListener('click', (e) => {
+    // Nav links jump to a homepage section. navigateTo('homepage') scrolls to
+    // top, so we explicitly scroll to the target section afterwards.
+    const scrollToSection = (e, sectionId) => {
+      e.preventDefault();
       this.navigateTo('homepage');
-    });
+      setTimeout(() => {
+        const el = document.getElementById(sectionId);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }, 50);
+    };
 
-    document.getElementById('nav-link-why').addEventListener('click', (e) => {
-      this.navigateTo('homepage');
-    });
-
-    document.getElementById('nav-link-testimonials').addEventListener('click', (e) => {
-      this.navigateTo('homepage');
-    });
+    document.getElementById('nav-link-services').addEventListener('click', (e) => scrollToSection(e, 'services'));
+    document.getElementById('nav-link-why').addEventListener('click', (e) => scrollToSection(e, 'why-us'));
+    document.getElementById('nav-link-testimonials').addEventListener('click', (e) => scrollToSection(e, 'testimonials'));
 
     document.getElementById('nav-login-btn').addEventListener('click', () => {
       this.navigateTo('auth');
@@ -514,6 +519,13 @@ class CloseMoreApp {
   handleOnboardingSubmit(event) {
     event.preventDefault();
 
+    // The whole wizard is one <form>; pressing Enter on an earlier step would
+    // otherwise submit it prematurely. Only proceed from the final step.
+    const finalStep = document.getElementById('onboarding-step-5');
+    if (finalStep && !finalStep.classList.contains('active')) {
+      return;
+    }
+
     if (!this.tempRegUser) {
       this.showToast('Session expired. Please sign up again.', 'error');
       this.navigateTo('auth');
@@ -535,8 +547,13 @@ class CloseMoreApp {
     const leadFieldsCheckboxes = document.querySelectorAll('input[name="ob-lead-fields"]:checked');
     const selectedFields = Array.from(leadFieldsCheckboxes).map(cb => cb.value);
 
-    const goal = document.querySelector('input[name="ob-goal"]:checked').value;
-    
+    const goalEl = document.querySelector('input[name="ob-goal"]:checked');
+    if (!goalEl) {
+      this.showToast('Please select your primary conversion goal.', 'error');
+      return;
+    }
+    const goal = goalEl.value;
+
     const notifEmail = document.getElementById('ob-notif-email').value.trim() || this.tempRegUser.email;
     const notifPhone = document.getElementById('ob-notif-phone').value.trim() || this.tempRegUser.phone;
 
@@ -640,6 +657,12 @@ class CloseMoreApp {
     const client = this.state.currentUser;
     if (!client) return;
 
+    // Normalize the plan name. Callers may pass either the short id ('Plan 1')
+    // from the picker buttons or the full stored label ('Plan 1 (Monthly)')
+    // when re-entering checkout for a Pending Payment client.
+    const isPlan1 = String(planName).includes('Plan 1');
+    planName = isPlan1 ? 'Plan 1' : 'Plan 2';
+
     // Display order details summary autofilled
     document.getElementById('checkout-selected-plan-name').textContent = planName === 'Plan 1' ? 'Plan 1 (Monthly Campaign Builder)' : 'Plan 2 (6-Month Scaling Partner)';
     document.getElementById('checkout-customer-name').textContent = `${client.firstName} ${client.lastName}`;
@@ -719,7 +742,12 @@ class CloseMoreApp {
 
   submitFirstLoginSurvey(event) {
     event.preventDefault();
-    const source = document.querySelector('input[name="survey-source"]:checked').value;
+    const sourceEl = document.querySelector('input[name="survey-source"]:checked');
+    if (!sourceEl) {
+      this.showToast('Please select how you heard about us.', 'error');
+      return;
+    }
+    const source = sourceEl.value;
     const client = this.state.currentUser;
 
     if (client) {
@@ -1453,8 +1481,10 @@ class CloseMoreApp {
     let areaPoints = `${padding},${height - padding}`;
     let dotsHTML = '';
 
+    // Avoid divide-by-zero when there is only a single data point.
+    const xDivisor = Math.max(pointsCount - 1, 1);
     dataValues.forEach((val, idx) => {
-      const x = padding + ((width - padding * 2) * (idx / (pointsCount - 1)));
+      const x = padding + ((width - padding * 2) * (idx / xDivisor));
       const y = (height - padding) - ((height - padding * 2) * (val / maxVal));
       
       if (idx === 0) {
@@ -1821,7 +1851,9 @@ class CloseMoreApp {
       spend,
       cpl,
       cpbc,
-      history: [...(client.metrics.history || [0, 0, 0, 0]), leads]
+      // Keep only the most recent 5 points so the chart's fixed 5-week axis
+      // stays aligned (previously this grew unbounded on every save).
+      history: [...(client.metrics.history || [0, 0, 0, 0]).slice(-4), leads]
     };
 
     this.saveState();
