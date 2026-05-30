@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloseMore | Insurance Media Portal & Lead Conversion</title>
+  <meta name="description" content="We Don't Just Generate Cheap Leads. We Help Insurance Agents Get Real Conversions. Google Ads, Meta Ads, and Funnel Optimization for Insurance Professionals.">
+  <script type="module" crossorigin src="/assets/index-Dum8dr_F.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CIQgLBEJ.css">
+</head>
+<body>
+
+  <!-- Loading Screen Overlay -->
+  <div class="loading-overlay" id="loading-overlay">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Global Navigation Header -->
+  <header class="navbar glass">
+    <a href="#" class="nav-brand" id="nav-logo-btn">
+      <img src="/assets/logo-DrcjsdHX.png" alt="CloseMore Logo" onerror="this.src='https://placehold.co/100x100/6366f1/ffffff?text=CM'">
+      <span>CloseMore</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#services" class="nav-link" id="nav-link-services">Services</a>
+      <a href="#why-us" class="nav-link" id="nav-link-why">Why CloseMore</a>
+      <a href="#testimonials" class="nav-link" id="nav-link-testimonials">Results</a>
+    </nav>
+    <div class="nav-actions">
+      <!-- Admin/Client Toggle for Simulation -->
+      <button class="btn btn-role-toggle" id="role-toggle-btn" title="Jump between Client Portal and Admin Dashboard">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <span>Toggle Dashboard</span>
+      </button>
+      <button class="btn btn-secondary btn-sm" id="nav-login-btn">Login</button>
+      <button class="btn btn-primary btn-sm" id="nav-cta-btn">Get Started</button>
+    </div>
+  </header>
+
+  <!-- VIEW 1: Homepage -->
+  <main id="view-homepage" class="view-panel active">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-badge">Conversion-Focused Insurance Marketing</div>
+        <h1>We Don’t Just Generate Cheap Leads. We Help Insurance Agents Get <span>Real Conversions</span>.</h1>
+        <p class="hero-subtitle">High-intent Google & Meta ad campaigns, custom funnels, and automated appointment tracking built specifically for insurance professionals.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-lg" onclick="app.navigateTo('auth')">Get Started Today</button>
+          <a href="#services" class="btn btn-secondary btn-lg">Explore Services</a>
+        </div>
+      </div>
+      <div class="hero-bg-visual">
+        <div class="glow-orb"></div>
+        <!-- Embedded modern conversion rate SVG mockup for aesthetic wow-factor -->
+        <svg viewBox="0 0 400 400" width="100%" height="100%" style="position:relative; z-index: 2; overflow: visible;">
+          <!-- Chart Grid -->
+          <line x1="50" y1="300" x2="350" y2="300" stroke="rgba(255,255,255,0.1)" stroke-width="2" />
+          <line x1="50" y1="200" x2="350" y2="200" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+          <line x1="50" y1="100" x2="350" y2="100" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+          <!-- Neon Path -->
+          <path d="M50,280 Q120,250 180,160 T320,80" fill="none" stroke="url(#hero-line-gradient)" stroke-width="6" stroke-linecap="round" style="filter: drop-shadow(0px 0px 8px rgba(99, 102, 241, 0.6));" />
+          <!-- Animated pulse point -->
+          <circle cx="320" cy="80" r="8" fill="#10b981" />
+          <circle cx="320" cy="80" r="16" fill="none" stroke="#10b981" stroke-width="2" opacity="0.5">
+            <animate attributeName="r" values="8;20;8" dur="2s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite" />
+          </circle>
+          <!-- Badge overlay -->
+          <foreignObject x="180" y="210" width="180" height="80">
+            <div class="glass" style="border-radius: var(--radius-sm); padding: 10px; font-size: 11px; border: 1px solid rgba(255,255,255,0.1); background: rgba(13,20,38,0.85);">
+              <div style="color: var(--color-success); font-weight:700;">+247% Conversion</div>
+              <div style="color: var(--color-text-secondary);">Avg Cost per Lead: $14.50</div>
+            </div>
+          </foreignObject>
+          <defs>
+            <linearGradient id="hero-line-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#6366f1" />
+              <stop offset="100%" stop-color="#a855f7" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+      <div class="section-header">
+        <h2>Tailored Client Acquisition Infrastructure</h2>
+        <p>We build, run, and optimize the entire traffic-to-close pipeline so you can focus on writing policies.</p>
+      </div>
+      <div class="grid-3">
+        <!-- Service 1 -->
+        <div class="card service-card glass glass-hover">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+          </div>
+          <h3>Google Ads for Insurance Agents</h3>
+          <p>Capture high-intent searches. We target buyers actively searching for life, health, commercial, or medicare coverage in your zip codes.</p>
+        </div>
+        <!-- Service 2 -->
+        <div class="card service-card glass glass-hover">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </div>
+          <h3>Meta Ads for Insurance Agents</h3>
+          <p>Interruptive social campaigns that convert. Using custom demographics, lookalikes, and pattern-interrupt copy to find prospects before your competitors do.</p>
+        </div>
+        <!-- Service 3 -->
+        <div class="card service-card glass glass-hover">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/><polygon points="12 11 12 17 17 14"/></svg>
+          </div>
+          <h3>Landing Pages & Funnels</h3>
+          <p>Designed to filter out visual tire-kickers. Ultra-fast, responsive custom-built questionnaire funnels that qualify leads before they schedule a call.</p>
+        </div>
+        <!-- Service 4 -->
+        <div class="card service-card glass glass-hover">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Lead Tracking System</h3>
+          <p>Never lose a lead to follow-up friction. Full API integrations syncing new opportunities into your CRM, dialer, or text sequencer within milliseconds.</p>
+        </div>
+        <!-- Service 5 -->
+        <div class="card service-card glass glass-hover">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3>Appointment Optimization</h3>
+          <p>SMS and email nurture systems that double show-up rates. We don't just hand off lead details; we book qualified calls directly on your calendar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder Video Section -->
+    <section class="section" style="background: rgba(255, 255, 255, 0.01);">
+      <div class="section-header">
+        <h2>Behind Our Conversion System</h2>
+        <p>Watch how we construct campaigns that outperform generalist agencies and standard lead brokers.</p>
+      </div>
+      <div class="video-grid">
+        <!-- Video 1: Mahad Video -->
+        <div class="card video-card glass">
+          <div class="video-container" onclick="app.playVideo('mahad')">
+            <img src="/assets/mahad_video-DAa9IyEj.png" class="video-thumbnail" alt="Mahad - Inside CloseMore conversion systems" onerror="this.src='https://placehold.co/600x340/1f2937/ffffff?text=Watch+Mahad+Video'">
+            <div class="video-play-btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3>Mahad (Founder)</h3>
+            <p>Deconstructing the exact system we use to filter out low-intent leads and drive positive ROI on insurance Google Ads campaigns.</p>
+          </div>
+        </div>
+        <!-- Video 2: Rodrigo Video -->
+        <div class="card video-card glass">
+          <div class="video-container" onclick="app.playVideo('rodrigo')">
+            <img src="/assets/rodrigo_video-D4bLb08G.png" class="video-thumbnail" alt="Rodrigo Castillo - 142 Booked Calls case study" onerror="this.src='https://placehold.co/600x340/1f2937/ffffff?text=Watch+Rodrigo+Castillo+Video'">
+            <div class="video-play-btn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </div>
+          </div>
+          <div class="video-info">
+            <h3>Rodrigo Castillo - Client Case Study</h3>
+            <p>How Rodrigo Castillo scaled his life insurance agency from struggling with generic lead databases to booking over 140 inbound appointments monthly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why CloseMore Section -->
+    <section id="why-us" class="section">
+      <div class="grid-2">
+        <div>
+          <div class="hero-badge">The CloseMore Advantage</div>
+          <h2 style="font-size: 38px; margin-bottom: 24px;">Built Exclusively for Growth-Minded Insurance Agents</h2>
+          <p style="color: var(--color-text-secondary); margin-bottom: 40px;">Standard agencies focus on "clicks" and "impressions". We know those metrics don't deposit into your bank account. Our systems align directly with your cost per written policy.</p>
+          
+          <div class="why-item">
+            <div class="why-check">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="why-text">
+              <h3>Higher Quality Exclusive Leads</h3>
+              <p>We target buyers searching explicitly for answers, not cheap prize-wheel sweepstakes entrants. Your leads are 100% exclusive to you.</p>
+            </div>
+          </div>
+          
+          <div class="why-item">
+            <div class="why-check">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="why-text">
+              <h3>Conversion-Focused Campaigns</h3>
+              <p>We write copy designed to filter out visual non-buyers, qualifying clients based on state licensure, health conditions, and budget constraints.</p>
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-check">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="why-text">
+              <h3>Niche Insurance Expertise</h3>
+              <p>We understand compliance guidelines, state licensing rules, and the language that moves buyers in life, Medicare, and commercial insurance.</p>
+            </div>
+          </div>
+
+          <div class="why-item">
+            <div class="why-check">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="why-text">
+              <h3>Transparent Real-Time Reporting</h3>
+              <p>Log in to your portal anytime. Track leads, bookings, ad spend, and cost per booked call without having to ask for manual spreadsheets.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Graphical mock panel for secondary visual interest -->
+        <div style="display:flex; align-items:center; justify-content:center;">
+          <div class="card glass" style="width: 100%; max-width: 440px; padding: 40px; border-radius: var(--radius-lg); position: relative; overflow: hidden;">
+            <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; background: rgba(168,85,247,0.1); border-radius: 50%; filter: blur(40px);"></div>
+            <h3 style="font-size:24px; margin-bottom: 30px;">The Performance Contrast</h3>
+            
+            <div style="margin-bottom: 24px;">
+              <div style="display:flex; justify-content:space-between; margin-bottom: 8px; font-size:14px;">
+                <span>Typical Lead Generation (Co-shared)</span>
+                <span style="color:var(--color-danger)">5% Close Rate</span>
+              </div>
+              <div style="background: rgba(255,255,255,0.05); height: 12px; border-radius: 6px;">
+                <div style="background: var(--color-danger); height: 100%; width: 15%; border-radius: 6px;"></div>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 40px;">
+              <div style="display:flex; justify-content:space-between; margin-bottom: 8px; font-size:14px;">
+                <span>CloseMore Campaign Leads</span>
+                <span style="color:var(--color-success); font-weight:700;">22% Close Rate</span>
+              </div>
+              <div style="background: rgba(255,255,255,0.05); height: 12px; border-radius: 6px;">
+                <div style="background: var(--color-success); height: 100%; width: 75%; border-radius: 6px; box-shadow: 0 0 10px rgba(16,185,129,0.3);"></div>
+              </div>
+            </div>
+
+            <div style="text-align: center; border-top: 1px solid var(--border-color); padding-top: 25px;">
+              <div style="font-size: 13px; color: var(--color-text-secondary); margin-bottom: 5px;">Average Client Return on Ad Spend</div>
+              <div style="font-size: 36px; font-family: var(--font-display); font-weight: 800; color: var(--color-text-primary);">4.8x ROAS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+      <div class="section-header">
+        <h2>What Our Partners Say</h2>
+        <p>Real insurance agents. Real campaigns. Unmatched return on ad spend.</p>
+      </div>
+      <div class="grid-3">
+        <!-- Testimonial 1 -->
+        <div class="card testimonial-card glass glass-hover">
+          <div>
+            <div class="testimonial-rating">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-quote">"Before CloseMore, we bought generic lists. We spent hours dialing dead phone numbers. In our first month with their funnels, we closed 18 final expense policies directly from inbound calendar bookings."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="testimonial-author-avatar" style="background:#4f46e5;">SR</div>
+            <div class="testimonial-author-info">
+              <h4>Sarah Ramirez</h4>
+              <p>Final Expense Broker</p>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="card testimonial-card glass glass-hover">
+          <div>
+            <div class="testimonial-rating">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-quote">"We've spent over $12,000 on Facebook Ads with zero return from other firms. CloseMore built a landing page that qualifies agents by income and coverage desires. The lead quality is day and night."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="testimonial-author-avatar" style="background:#7c3aed;">DC</div>
+            <div class="testimonial-author-info">
+              <h4>David Chen</h4>
+              <p>Commercial Lines Principal</p>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="card testimonial-card glass glass-hover">
+          <div>
+            <div class="testimonial-rating">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-quote">"Stripe verification was simple, and the customer portal shows everything clearly in real time. We always see exactly what we're paying for. Their Medicare campaign generated 89 bookings last month alone."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="testimonial-author-avatar" style="background:#2563eb;">MH</div>
+            <div class="testimonial-author-info">
+              <h4>Marcus Harrison</h4>
+              <p>Senior Medicare Advisor</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA Card Section -->
+    <section class="section">
+      <div class="bottom-cta glass">
+        <h2>Ready to Scale Your Book of Business?</h2>
+        <p>Stop paying for shared databases and lead lists. Build a predictable client generation asset that you own.</p>
+        <button class="btn btn-primary btn-lg" onclick="app.navigateTo('auth')">Get Started</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="nav-brand">
+          <span>CloseMore</span>
+        </div>
+        <div class="footer-copy">&copy; 2026 CloseMore Insurance Media. All rights reserved.</div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- VIEW 2: Auth View (Login/Signup options) -->
+  <div id="view-auth" class="view-panel">
+    <div class="auth-container">
+      <div class="auth-box glass animate-fade-in">
+        <div class="auth-tabs">
+          <button class="auth-tab active" id="auth-tab-signup" onclick="app.setAuthTab('signup')">Sign Up</button>
+          <button class="auth-tab" id="auth-tab-login" onclick="app.setAuthTab('login')">Login</button>
+        </div>
+
+        <!-- Signup Panel -->
+        <form id="signup-initial-form" onsubmit="app.handleInitialSignup(event)">
+          <div class="auth-form-group">
+            <label for="reg-name">Full Name</label>
+            <input type="text" id="reg-name" placeholder="John Doe" required>
+          </div>
+          <div class="auth-form-group">
+            <label for="reg-email">Work Email</label>
+            <input type="email" id="reg-email" placeholder="you@agency.com" required>
+          </div>
+          <div class="auth-form-group">
+            <label for="reg-phone">Phone Number</label>
+            <input type="tel" id="reg-phone" placeholder="(555) 123-4567" required>
+          </div>
+          <div class="auth-form-group">
+            <label for="reg-password">Password</label>
+            <input type="password" id="reg-password" placeholder="Min. 8 characters" required>
+          </div>
+          <div class="auth-form-group" style="display: flex; gap: 8px; align-items: flex-start; font-size: 13px; color: var(--color-text-secondary);">
+            <input type="checkbox" id="reg-terms" required style="width:16px; height:16px; margin-top:2px;">
+            <label for="reg-terms">I agree to the Terms of Service & Privacy Policy.</label>
+          </div>
+          <button type="submit" class="btn btn-primary auth-submit-btn">Create Free Account</button>
+          <p class="auth-switch-text">Already have an account? <span onclick="app.setAuthTab('login')">Log In</span></p>
+        </form>
+
+        <!-- Login Panel (hidden by default) -->
+        <form id="login-form" onsubmit="app.handleLogin(event)" style="display:none;">
+          <div class="auth-form-group">
+            <label for="login-email">Email Address</label>
+            <input type="email" id="login-email" placeholder="you@agency.com" required>
+          </div>
+          <div class="auth-form-group">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" placeholder="••••••••" required>
+          </div>
+          <button type="submit" class="btn btn-primary auth-submit-btn">Log In</button>
+          <p class="auth-switch-text">New to CloseMore? <span onclick="app.setAuthTab('signup')">Create an Account</span></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIEW 3: Onboarding Questionnaire Form -->
+  <div id="view-onboarding" class="view-panel">
+    <div class="onboarding-container glass">
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill" id="onboarding-progress"></div>
+      </div>
+
+      <form id="onboarding-full-form" onsubmit="app.handleOnboardingSubmit(event)">
+        <!-- Step 2: Profile Setup -->
+        <div class="onboarding-step active" id="onboarding-step-2">
+          <h2 class="step-title">Profile Setup</h2>
+          <p class="step-subtitle">Specify your state boundaries and budget parameters.</p>
+          
+          <div class="auth-form-group">
+            <label style="font-weight:600; margin-bottom: 12px; display:block;">What states are you NOT licensed in and do NOT want to run ads in?</label>
+            <div class="options-grid" style="grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom:15px;">
+              <label class="option-card" style="padding: 10px 14px;">
+                <input type="checkbox" name="ob-states-excluded" value="California">
+                <span>California</span>
+              </label>
+              <label class="option-card" style="padding: 10px 14px;">
+                <input type="checkbox" name="ob-states-excluded" value="Texas">
+                <span>Texas</span>
+              </label>
+              <label class="option-card" style="padding: 10px 14px;">
+                <input type="checkbox" name="ob-states-excluded" value="Florida">
+                <span>Florida</span>
+              </label>
+              <label class="option-card" style="padding: 10px 14px;">
+                <input type="checkbox" name="ob-states-excluded" value="New York">
+                <span>New York</span>
+              </label>
+              <label class="option-card" style="padding: 10px 14px;">
+                <input type="checkbox" name="ob-states-excluded" value="Pennsylvania">
+                <span>Pennsylvania</span>
+              </label>
+              <label class="option-card" style="padding: 10px 14px;">
+                <input type="checkbox" name="ob-states-excluded" value="Illinois">
+                <span>Illinois</span>
+              </label>
+              <label class="option-card" style="padding: 10px 14px;">
+                <input type="checkbox" name="ob-states-excluded" value="Ohio">
+                <span>Ohio</span>
+              </label>
+              <label class="option-card" style="padding: 10px 14px;">
+                <input type="checkbox" name="ob-states-excluded" value="Georgia">
+                <span>Georgia</span>
+              </label>
+              <label class="option-card" style="padding: 10px 14px;">
+                <input type="checkbox" name="ob-states-excluded" value="North Carolina">
+                <span>North Carolina</span>
+              </label>
+              <label class="option-card" style="padding: 10px 14px;">
+                <input type="checkbox" name="ob-states-excluded" value="Michigan">
+                <span>Michigan</span>
+              </label>
+              <label class="option-card" style="padding: 10px 14px;">
+                <input type="checkbox" name="ob-states-excluded" value="Washington">
+                <span>Washington</span>
+              </label>
+              <label class="option-card" style="padding: 10px 14px;">
+                <input type="checkbox" name="ob-states-excluded" value="Virginia">
+                <span>Virginia</span>
+              </label>
+            </div>
+            
+            <label for="ob-states-excluded-custom">Other Restricted States (comma separated)</label>
+            <input type="text" id="ob-states-excluded-custom" placeholder="e.g. Alaska, Hawaii">
+          </div>
+
+          <div class="auth-form-group" style="margin-top:25px;">
+            <label for="ob-budget">What is your monthly ad spend budget?</label>
+            <select id="ob-budget" required>
+              <option value="" disabled selected>Select monthly budget...</option>
+              <option value="$1,000 – $1,500">$1,000 – $1,500 / month</option>
+              <option value="$1,500 – $3,000">$1,500 – $3,000 / month</option>
+              <option value="$3,000 – $5,000">$3,000 – $5,000 / month</option>
+              <option value="$5,000+">$5,000+ / month</option>
+            </select>
+          </div>
+
+          <div class="form-actions">
+            <div></div> <!-- space filler -->
+            <button type="button" class="btn btn-primary" onclick="app.onboardingNext(2)">Next Step</button>
+          </div>
+        </div>
+
+        <!-- Step 3: Lead Form Builder -->
+        <div class="onboarding-step" id="onboarding-step-3">
+          <h2 class="step-title">Select What Information You Want To Collect From Your Leads</h2>
+          <p class="step-subtitle">Core fields are always collected. Select up to 8 optional fields.</p>
+          
+          <div style="margin-bottom:25px;">
+            <h4 style="font-size:14px; margin-bottom:12px; color:var(--color-text-secondary);">Mandatory Fields (Always Included)</h4>
+            <div style="display:flex; gap:15px; flex-wrap:wrap;">
+              <label class="option-card selected" style="opacity:0.8; cursor:not-allowed; padding: 10px 20px;">
+                <input type="checkbox" checked disabled>
+                <span>Full Name</span>
+              </label>
+              <label class="option-card selected" style="opacity:0.8; cursor:not-allowed; padding: 10px 20px;">
+                <input type="checkbox" checked disabled>
+                <span>Phone Number</span>
+              </label>
+              <label class="option-card selected" style="opacity:0.8; cursor:not-allowed; padding: 10px 20px;">
+                <input type="checkbox" checked disabled>
+                <span>Email Address</span>
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <h4 style="font-size:14px; margin-bottom:12px; color:var(--color-text-secondary);">Optional Fields (Choose up to 8)</h4>
+            <div class="options-grid">
+              <label class="option-card" onclick="app.handleOptionalFieldClick(this)">
+                <input type="checkbox" name="ob-lead-fields" value="Remaining Mortgage Balance">
+                <span>Remaining Mortgage Balance</span>
+              </label>
+              <label class="option-card" onclick="app.handleOptionalFieldClick(this)">
+                <input type="checkbox" name="ob-lead-fields" value="State">
+                <span>State</span>
+              </label>
+              <label class="option-card" onclick="app.handleOptionalFieldClick(this)">
+                <input type="checkbox" name="ob-lead-fields" value="Date of Birth">
+                <span>Date of Birth</span>
+              </label>
+              <label class="option-card" onclick="app.handleOptionalFieldClick(this)">
+                <input type="checkbox" name="ob-lead-fields" value="How many months would your family survive without your income?">
+                <span>How many months would your family survive?</span>
+              </label>
+              <label class="option-card" onclick="app.handleOptionalFieldClick(this)">
+                <input type="checkbox" name="ob-lead-fields" value="Gender">
+                <span>Gender</span>
+              </label>
+              <label class="option-card" onclick="app.handleOptionalFieldClick(this)">
+                <input type="checkbox" name="ob-lead-fields" value="Beneficiary">
+                <span>Beneficiary</span>
+              </label>
+              <label class="option-card" onclick="app.handleOptionalFieldClick(this)">
+                <input type="checkbox" name="ob-lead-fields" value="Tobacco Use">
+                <span>Tobacco Use</span>
+              </label>
+              <label class="option-card" onclick="app.handleOptionalFieldClick(this)">
+                <input type="checkbox" name="ob-lead-fields" value="Who would be most financially affected if something unexpected happened to you?">
+                <span>Who would be most affected?</span>
+              </label>
+              <label class="option-card" onclick="app.handleOptionalFieldClick(this)">
+                <input type="checkbox" name="ob-lead-fields" value="Additional custom questions (future support)">
+                <span>Additional custom questions</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn btn-secondary" onclick="app.onboardingPrev(3)">Back</button>
+            <button type="button" class="btn btn-primary" onclick="app.onboardingNext(3)">Next Step</button>
+          </div>
+        </div>
+
+        <!-- Step 4: Conversion Goal -->
+        <div class="onboarding-step" id="onboarding-step-4">
+          <h2 class="step-title">Conversion Goal</h2>
+          <p class="step-subtitle">What is your main conversion goal?</p>
+          
+          <div class="options-grid">
+            <label class="option-card" id="goal-opt-calls">
+              <input type="radio" name="ob-goal" value="Phone Calls" required>
+              <span>Phone Calls</span>
+            </label>
+            <label class="option-card" id="goal-opt-appts">
+              <input type="radio" name="ob-goal" value="Appointments Booked">
+              <span>Appointments Booked</span>
+            </label>
+            <label class="option-card" id="goal-opt-leads">
+              <input type="radio" name="ob-goal" value="Lead Forms">
+              <span>Lead Forms</span>
+            </label>
+            <label class="option-card" id="goal-opt-quotes">
+              <input type="radio" name="ob-goal" value="Quote Requests">
+              <span>Quote Requests</span>
+            </label>
+            <label class="option-card" id="goal-opt-other">
+              <input type="radio" name="ob-goal" value="Other">
+              <span>Other</span>
+            </label>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn btn-secondary" onclick="app.onboardingPrev(4)">Back</button>
+            <button type="button" class="btn btn-primary" onclick="app.onboardingNext(4)">Next Step</button>
+          </div>
+        </div>
+
+        <!-- Step 5: Lead Notification Settings -->
+        <div class="onboarding-step" id="onboarding-step-5">
+          <h2 class="step-title">Lead Notification Settings</h2>
+          <p class="step-subtitle">Routing settings for instant notification alerts when a lead lands.</p>
+          
+          <div class="auth-form-group">
+            <label for="ob-notif-email">What email should receive lead notifications?</label>
+            <input type="email" id="ob-notif-email" required>
+          </div>
+
+          <div class="auth-form-group">
+            <label for="ob-notif-phone">What phone number should receive lead notifications?</label>
+            <input type="tel" id="ob-notif-phone" required>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn btn-secondary" onclick="app.onboardingPrev(5)">Back</button>
+            <button type="submit" class="btn btn-primary">Proceed to Plans</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- VIEW 4: Payment Plans & Stripe Form -->
+  <div id="view-payment" class="view-panel">
+    <!-- Part 1: Plan Picker -->
+    <div class="plans-container" id="plans-picker-section">
+      <div class="section-header" style="text-align: center; margin-left:auto; margin-right:auto;">
+        <h2>Select Your Media Plan</h2>
+        <p>Choose the level of campaign customization and commitment that matches your agency scaling target.</p>
+      </div>
+      
+      <div class="plans-grid">
+        <!-- Plan 1 -->
+        <div class="card plan-card glass">
+          <div class="plan-name">Monthly Campaign Builder</div>
+          <div class="plan-price">$1,750 <span>/ mo</span></div>
+          <div class="plan-term">1-Month Commitment</div>
+          <ul class="plan-features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              Google & Meta Campaign Buildout
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              Custom High-Converting Funnel
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              Weekly Performance Reporting
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              CRM Integration & API Sync
+            </li>
+          </ul>
+          <button class="btn btn-secondary btn-lg" onclick="app.selectPlan('Plan 1', 1750)" style="margin-top:auto;">Start Monthly Plan</button>
+        </div>
+        <!-- Plan 2 -->
+        <div class="card plan-card glass popular">
+          <span class="plan-badge">Save $3,000</span>
+          <div class="plan-name">Semi-Annual Scaling Partner</div>
+          <div class="plan-price">$1,250 <span>/ mo</span></div>
+          <div class="plan-term">6-Month Commitment</div>
+          <ul class="plan-features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              Everything in Monthly Plan
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              Bi-weekly optimization reviews
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              Advanced competitor tracking
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              Priority developer chat support
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              A/B lander copy split-testing
+            </li>
+          </ul>
+          <button class="btn btn-primary btn-lg" onclick="app.selectPlan('Plan 2', 1250)" style="margin-top:auto;">Start 6-Month Plan</button>
+          <div style="font-size: 11px; color: var(--color-text-secondary); margin-top: 15px; line-height: 1.4; text-align: left; background: rgba(0,0,0,0.02); padding: 10px; border-radius: 4px; border: 1px solid var(--border-color);">
+            Notice: Early cancellation requires a 30-day notice and a cancellation fee of $1,875. One additional month of service will be provided during the cancellation period.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Part 2: Stripe Payment Checkout (shows after choosing plan) -->
+    <div class="checkout-container glass" id="stripe-checkout-section" style="max-width:550px; display:none;">
+      <div class="stripe-header" style="border-bottom:1px solid var(--border-color); padding-bottom:15px; margin-bottom:20px; display:flex; justify-content:space-between; align-items:center;">
+        <h3 style="font-size:22px; font-weight:700;">Secure Stripe Checkout</h3>
+        <div class="stripe-amount" id="stripe-price-display" style="font-size:24px; font-weight:800; color:var(--color-primary);">$1,250.00</div>
+      </div>
+      
+      <div style="background:var(--bg-secondary); border:1px solid var(--border-color); padding:20px; border-radius:var(--radius-sm); margin-bottom:25px;">
+        <h4 style="font-size:14px; margin-bottom:12px; font-weight:700;">Order Summary</h4>
+        <div style="font-size:14px; line-height:1.8;">
+          <p><strong>Selected Plan:</strong> <span id="checkout-selected-plan-name">Plan 2 (6-Month Scaling Partner)</span></p>
+          <p><strong>Account Owner:</strong> <span id="checkout-customer-name">John Doe</span></p>
+          <p><strong>Work Email:</strong> <span id="checkout-customer-email">john@example.com</span></p>
+          <p><strong>Phone Number:</strong> <span id="checkout-customer-phone">(555) 123-4567</span></p>
+        </div>
+      </div>
+
+      <!-- Plan 2 Warning Notice -->
+      <div id="checkout-cancel-notice" style="display:none; background:rgba(245, 158, 11, 0.1); border-left:4px solid var(--color-warning); padding:15px; border-radius:4px; font-size:13px; color:var(--color-text-primary); margin-bottom:25px; line-height:1.4;">
+        <strong>Early Cancellation Policy Notice:</strong> Early cancellation requires a 30-day notice and a cancellation fee of $1,875. This means one additional month of service will be provided during the cancellation period.
+      </div>
+
+      <div style="text-align:center; margin-bottom:25px;">
+        <p style="font-size:13px; color:var(--color-text-secondary); margin-bottom:15px;">Click the button below to open Stripe's secure checkout page:</p>
+        
+        <!-- Stripe Buy Button Container (Injected dynamically) -->
+        <div id="stripe-buy-button-container" style="display:flex; justify-content:center; align-items:center; min-height:50px; padding:10px 0;">
+          <!-- Injected via app.js -->
+        </div>
+      </div>
+
+      <div style="border-top:1px solid var(--border-color); padding-top:25px; text-align:center;">
+        <h4 style="font-size:14px; margin-bottom:10px; font-weight:700;">Unlock Customer Dashboard</h4>
+        <p style="font-size:12px; color:var(--color-text-secondary); margin-bottom:20px;">After you complete the Stripe payment process, click the verification button below to activate your campaign portal.</p>
+        <button class="btn btn-primary" onclick="app.verifyStripePayment()" style="width:100%; padding:14px; font-weight:700;">Verify Stripe Payment & Access Portal</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIEW 5: Customer Portal -->
+  <div id="view-client-portal" class="view-panel">
+    <div class="portal-layout">
+      <!-- Sidebar Nav -->
+      <aside class="sidebar">
+        <div class="sidebar-menu">
+          <button class="sidebar-item active" id="cp-menu-dash" onclick="app.switchPortalTab('dash')">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>
+            <span>Overview</span>
+          </button>
+          <button class="sidebar-item" id="cp-menu-google" onclick="app.switchPortalTab('google')">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span>Google Ads</span>
+          </button>
+          <button class="sidebar-item" id="cp-menu-meta" onclick="app.switchPortalTab('meta')">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            <span>Meta Ads</span>
+          </button>
+          <button class="sidebar-item" id="cp-menu-files" onclick="app.switchPortalTab('files')">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            <span>Files Vault</span>
+          </button>
+          <button class="sidebar-item" id="cp-menu-chat" onclick="app.switchPortalTab('chat')">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span>Support Chat</span>
+          </button>
+          <button class="sidebar-item" id="cp-menu-billing" onclick="app.switchPortalTab('billing')">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            <span>Billing</span>
+          </button>
+          <button class="sidebar-item" id="cp-menu-deals" onclick="app.switchPortalTab('deals')">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            <span>Deals</span>
+          </button>
+          <button class="sidebar-item" id="cp-menu-settings" onclick="app.switchPortalTab('settings')">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            <span>Settings</span>
+          </button>
+        </div>
+        
+        <div>
+          <button class="sidebar-item" onclick="app.logout()" style="color:var(--color-danger)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+            <span>Sign Out</span>
+          </button>
+        </div>
+      </aside>
+
+      <!-- Portal Dashboard Content -->
+      <main class="portal-content">
+        <div class="portal-header">
+          <div>
+            <h1 style="font-size: 28px;" id="portal-welcome-title">Welcome Back, Agent</h1>
+            <p style="color: var(--color-text-secondary); font-size:14px;">Real-time insurance acquisition metrics</p>
+          </div>
+          <span class="status-badge status-active" id="portal-campaign-status-badge">
+            <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:currentColor;"></span>
+            Campaign Active
+          </span>
+        </div>
+
+        <!-- PORTAL TAB 1: Main Overview -->
+        <div class="portal-panel active" id="portal-tab-dash">
+          <!-- Quick Metric Grid -->
+          <div class="metrics-grid">
+            <div class="card metric-card glass">
+              <div class="metric-label">Leads Generated</div>
+              <div class="metric-value" id="m-leads">142</div>
+              <div class="metric-trend trend-up">↑ 12% vs last week</div>
+            </div>
+            <div class="card metric-card glass">
+              <div class="metric-label">Booked Appointments</div>
+              <div class="metric-value" id="m-appointments">34</div>
+              <div class="metric-trend trend-up">↑ 8% vs last week</div>
+            </div>
+            <div class="card metric-card glass">
+              <div class="metric-label">Ad Spend</div>
+              <div class="metric-value" id="m-spend">$2,450</div>
+              <div class="metric-trend" style="color:var(--color-text-muted);">Budget: $5k max</div>
+            </div>
+            <div class="card metric-card glass">
+              <div class="metric-label">Cost Per Lead</div>
+              <div class="metric-value" id="m-cpl">$17.25</div>
+              <div class="metric-trend trend-down">↓ $2.10 reduction</div>
+            </div>
+            <div class="card metric-card glass">
+              <div class="metric-label">Cost Per Booked Call</div>
+              <div class="metric-value" id="m-cpbc">$72.05</div>
+              <div class="metric-trend trend-down">↓ 4.2% drop</div>
+            </div>
+          </div>
+
+          <!-- Secondary Grid: Checklist & Performance -->
+          <div class="panel-grid">
+            <div class="card panel-card glass">
+              <div class="panel-title">
+                <span>Overall Lead Conversions</span>
+                <span style="font-size:12px; color:var(--color-text-secondary)">Past 30 Days</span>
+              </div>
+              <div class="chart-container" id="svg-lead-chart-box">
+                <!-- Javascript will render a dynamic SVG chart here -->
+              </div>
+            </div>
+            
+            <div class="card panel-card glass">
+              <div class="panel-title">Onboarding Checklist</div>
+              <div id="checklist-tasks-box">
+                <!-- Checklist items loaded dynamically -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Meeting schedule link mock -->
+          <div class="card panel-card glass">
+            <div class="panel-title">Book Onboarding Review Call</div>
+            <div class="booking-widget">
+              <p style="color:var(--color-text-secondary); margin-bottom: 20px;">Schedule your recurring bi-weekly campaign optimization strategy review with the media team.</p>
+              
+              <div class="calendar-grid" id="mock-calendar">
+                <!-- Calendar generated dynamically -->
+              </div>
+              
+              <div class="time-slots" id="mock-timeslots" style="display:none;">
+                <div class="time-slot" onclick="app.selectTimeSlot(this)">10:00 AM</div>
+                <div class="time-slot" onclick="app.selectTimeSlot(this)">1:30 PM</div>
+                <div class="time-slot" onclick="app.selectTimeSlot(this)">3:00 PM</div>
+                <div class="time-slot" onclick="app.selectTimeSlot(this)">4:15 PM</div>
+              </div>
+              
+              <button class="btn btn-primary" id="book-slot-btn" disabled style="margin-top: 25px;" onclick="app.confirmMeetingBooking()">Confirm Booking Date</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PORTAL TAB 2: Google Ads Details -->
+        <div class="portal-panel" id="portal-tab-google">
+          <div class="card panel-card glass" style="margin-bottom: 30px;">
+            <div class="panel-title">Google Ads Search Engine Performance</div>
+            <div class="grid-3" style="margin-bottom: 30px;">
+              <div>
+                <div class="metric-label">Google Clicks</div>
+                <div class="metric-value" id="google-clicks">482</div>
+              </div>
+              <div>
+                <div class="metric-label">Google Conversions</div>
+                <div class="metric-value" id="google-conversions">58</div>
+              </div>
+              <div>
+                <div class="metric-label">Google CTR</div>
+                <div class="metric-value">6.8%</div>
+              </div>
+            </div>
+            <div class="chart-container" id="svg-google-chart-box"></div>
+          </div>
+
+          <div class="card panel-card glass">
+            <div class="panel-title">Top Converting Search Keywords</div>
+            <table style="width: 100%; border-collapse: collapse; text-align: left; font-size:14px;">
+              <thead>
+                <tr style="border-bottom: 1px solid var(--border-color); color:var(--color-text-secondary);">
+                  <th style="padding:12px;">Search Keyword</th>
+                  <th style="padding:12px;">Impressions</th>
+                  <th style="padding:12px;">Clicks</th>
+                  <th style="padding:12px;">Conversions</th>
+                  <th style="padding:12px;">CPL</th>
+                </tr>
+              </thead>
+              <tbody id="google-keywords-tbody">
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.03);">
+                  <td style="padding:12px;">"best life insurance policies for seniors"</td>
+                  <td style="padding:12px;">1,420</td>
+                  <td style="padding:12px;">185</td>
+                  <td style="padding:12px;">22</td>
+                  <td style="padding:12px; color:var(--color-success);">$12.40</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.03);">
+                  <td style="padding:12px;">"whole life insurance calculator"</td>
+                  <td style="padding:12px;">890</td>
+                  <td style="padding:12px;">92</td>
+                  <td style="padding:12px;">14</td>
+                  <td style="padding:12px; color:var(--color-success);">$15.10</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.03);">
+                  <td style="padding:12px;">"affordable terminal illness coverage"</td>
+                  <td style="padding:12px;">540</td>
+                  <td style="padding:12px;">64</td>
+                  <td style="padding:12px;">9</td>
+                  <td style="padding:12px; color:var(--color-success);">$18.90</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- PORTAL TAB 3: Meta Ads Details -->
+        <div class="portal-panel" id="portal-tab-meta">
+          <div class="card panel-card glass" style="margin-bottom: 30px;">
+            <div class="panel-title">Meta (Facebook/Instagram) Acquisition Performance</div>
+            <div class="grid-3" style="margin-bottom: 30px;">
+              <div>
+                <div class="metric-label">Meta Impressions</div>
+                <div class="metric-value" id="meta-impressions">84,120</div>
+              </div>
+              <div>
+                <div class="metric-label">Meta Leads</div>
+                <div class="metric-value" id="meta-leads">84</div>
+              </div>
+              <div>
+                <div class="metric-label">Meta Average CPL</div>
+                <div class="metric-value" id="meta-cpl">$21.30</div>
+              </div>
+            </div>
+            <div class="chart-container" id="svg-meta-chart-box"></div>
+          </div>
+
+          <div class="card panel-card glass">
+            <div class="panel-title">Active Ad Creative Performance</div>
+            <div class="grid-2">
+              <div class="glass" style="border-radius: var(--radius-sm); padding: 16px; border: 1px solid var(--border-color);">
+                <div style="background: rgba(255,255,255,0.05); height: 120px; border-radius: 4px; display:flex; align-items:center; justify-content:center; color:var(--color-text-muted); font-size:13px; margin-bottom: 15px;">
+                  [Video Creative: Rodrigo Castillo Testimonial Cut]
+                </div>
+                <h4 style="margin-bottom: 8px;">Rodrigo Case Study Testimonial (Ad #01)</h4>
+                <div style="display:flex; justify-content:space-between; font-size: 13px; color:var(--color-text-secondary);">
+                  <span>Leads: 51</span>
+                  <span>CPL: $19.40</span>
+                  <span style="color:var(--color-success)">ROAS: 5.2x</span>
+                </div>
+              </div>
+              <div class="glass" style="border-radius: var(--radius-sm); padding: 16px; border: 1px solid var(--border-color);">
+                <div style="background: rgba(255,255,255,0.05); height: 120px; border-radius: 4px; display:flex; align-items:center; justify-content:center; color:var(--color-text-muted); font-size:13px; margin-bottom: 15px;">
+                  [Image Creative: Shield Arrow Conversion Comparison]
+                </div>
+                <h4 style="margin-bottom: 8px;">Conversions Contrast Graphics (Ad #02)</h4>
+                <div style="display:flex; justify-content:space-between; font-size: 13px; color:var(--color-text-secondary);">
+                  <span>Leads: 33</span>
+                  <span>CPL: $24.22</span>
+                  <span style="color:var(--color-success)">ROAS: 4.1x</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PORTAL TAB 4: Files Vault -->
+        <div class="portal-panel" id="portal-tab-files">
+          <div class="card panel-card glass">
+            <div class="panel-title">Client File Vault</div>
+            <p style="color:var(--color-text-secondary); margin-bottom:20px; font-size:14px;">Upload onboarding documents, state licenses, brand logos, or custom ad guidelines. Maximum file size: 25MB.</p>
+            
+            <div class="file-upload-zone" id="file-dropzone" onclick="document.getElementById('file-input').click()">
+              <input type="file" id="file-input" style="display:none;" onchange="app.handleFileSelect(event)">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--color-primary); margin-bottom:10px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              <h4>Drag & drop files here</h4>
+              <p style="font-size:12px; color:var(--color-text-muted); margin-top:4px;">or click to browse local files</p>
+            </div>
+
+            <div class="uploaded-files-list" id="client-files-list-box">
+              <!-- Files loaded dynamically -->
+            </div>
+          </div>
+        </div>
+
+        <!-- PORTAL TAB 5: Support Chat -->
+        <div class="portal-panel" id="portal-tab-chat">
+          <div class="card panel-card glass">
+            <div class="panel-title">Support & Developer Communication</div>
+            
+            <div class="chat-container">
+              <div class="chat-history" id="client-chat-history">
+                <!-- Messages populated dynamically -->
+              </div>
+              <form onsubmit="app.sendChatMessage(event, 'client')">
+                <div class="chat-input-wrapper">
+                  <input type="text" id="client-chat-input" placeholder="Type your message to our optimization team..." required>
+                  <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- PORTAL TAB 6: Billing & Subscription -->
+        <div class="portal-panel" id="portal-tab-billing">
+          <div class="card panel-card glass">
+            <div class="panel-title">Subscription & Billing Portal</div>
+            
+            <div class="billing-card glass">
+              <div style="display:flex; justify-content:space-between; margin-bottom:15px;">
+                <div>
+                  <h4 style="font-size:18px;" id="billing-plan-title">Semi-Annual Scaling Partner</h4>
+                  <p style="color:var(--color-text-secondary); font-size:13px;" id="billing-plan-desc">6-month commitment, billed monthly</p>
+                </div>
+                <span class="status-badge status-active">Active</span>
+              </div>
+              <div style="font-size: 24px; font-weight:700; margin-bottom:20px;" id="billing-plan-price">$1,250 / month</div>
+              <div style="font-size:13px; color:var(--color-text-secondary);">Next invoice date: <strong id="billing-next-date">June 30, 2026</strong></div>
+            </div>
+
+            <div class="panel-title" style="margin-top:40px;">Invoice History</div>
+            <table style="width: 100%; border-collapse: collapse; text-align: left; font-size:14px;">
+              <thead>
+                <tr style="border-bottom: 1px solid var(--border-color); color:var(--color-text-secondary);">
+                  <th style="padding:12px;">Invoice ID</th>
+                  <th style="padding:12px;">Billing Date</th>
+                  <th style="padding:12px;">Amount</th>
+                  <th style="padding:12px;">Payment Status</th>
+                  <th style="padding:12px;">Receipt</th>
+                </tr>
+              </thead>
+              <tbody id="billing-invoices-tbody">
+                <!-- Dynamically injected invoices -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- PORTAL TAB 7: Deals Pipeline -->
+        <div class="portal-panel" id="portal-tab-deals">
+          <div class="deals-container">
+            <div class="deals-pipeline-header" style="margin-bottom:25px;">
+              <div>
+                <h2 style="font-size:24px;">Sales Pipeline & Opportunities</h2>
+                <p style="color:var(--color-text-secondary); font-size:13px;">Track lead conversions and pipeline value</p>
+              </div>
+              <div>
+                <button class="btn btn-primary" id="ghl-connect-btn" onclick="app.connectGoHighLevel()">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+                  Connect To GoHighLevel
+                </button>
+              </div>
+            </div>
+            
+            <div class="deals-board" id="deals-board-container">
+              <!-- Columns loaded dynamically -->
+            </div>
+          </div>
+        </div>
+
+        <!-- PORTAL TAB 8: Settings -->
+        <div class="portal-panel" id="portal-tab-settings">
+          <div class="settings-grid">
+            <aside class="settings-nav">
+              <button class="settings-nav-item active" id="btn-sett-profile" onclick="app.switchSettingsSection('profile')">Profile Settings</button>
+              <button class="settings-nav-item" id="btn-sett-notifications" onclick="app.switchSettingsSection('notifications')">Notifications</button>
+              <button class="settings-nav-item" id="btn-sett-theme" onclick="app.switchSettingsSection('theme')">Theme Settings</button>
+            </aside>
+            
+            <main class="settings-content">
+              <!-- Profile Settings -->
+              <div class="settings-section active" id="sett-section-profile">
+                <div class="card panel-card glass">
+                  <div class="panel-title">Profile Details</div>
+                  <form onsubmit="app.saveProfileSettings(event)">
+                    <div class="admin-form-row">
+                      <div class="admin-form-group">
+                        <label for="sett-first-name">First Name</label>
+                        <input type="text" id="sett-first-name" required>
+                      </div>
+                      <div class="admin-form-group">
+                        <label for="sett-last-name">Last Name</label>
+                        <input type="text" id="sett-last-name" required>
+                      </div>
+                    </div>
+                    <div class="admin-form-group">
+                      <label for="sett-phone">Phone Number</label>
+                      <input type="tel" id="sett-phone" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="margin-top:10px;">Save Profile</button>
+                  </form>
+                </div>
+              </div>
+              
+              <!-- Notifications Settings -->
+              <div class="settings-section" id="sett-section-notifications">
+                <div class="card panel-card glass">
+                  <div class="panel-title">Lead Notification Routing</div>
+                  <p style="font-size:13px; color:var(--color-text-secondary); margin-bottom:20px;">Configure where new lead details should be instantly forwarded.</p>
+                  <form onsubmit="app.saveNotificationSettings(event)">
+                    <div class="admin-form-group">
+                      <label for="sett-notif-email">Lead Notification Email</label>
+                      <input type="email" id="sett-notif-email" required>
+                    </div>
+                    <div class="admin-form-group">
+                      <label for="sett-notif-phone">Lead Notification Phone</label>
+                      <input type="tel" id="sett-notif-phone" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="margin-top:10px;">Update Routing Settings</button>
+                  </form>
+                </div>
+              </div>
+              
+              <!-- Theme Settings -->
+              <div class="settings-section" id="sett-section-theme">
+                <div class="card panel-card glass">
+                  <div class="panel-title">Theme Preferences</div>
+                  <p style="font-size:13px; color:var(--color-text-secondary); margin-bottom:20px;">Choose your visual interface appearance preference.</p>
+                  
+                  <div class="options-grid">
+                    <label class="option-card" id="theme-opt-light">
+                      <input type="radio" name="sett-theme" value="light" onclick="app.setThemePreference('light')">
+                      <span>Light (Bright SaaS)</span>
+                    </label>
+                    <label class="option-card" id="theme-opt-dark">
+                      <input type="radio" name="sett-theme" value="dark" onclick="app.setThemePreference('dark')">
+                      <span>Dark Mode</span>
+                    </label>
+                    <label class="option-card" id="theme-opt-system">
+                      <input type="radio" name="sett-theme" value="system" onclick="app.setThemePreference('system')">
+                      <span>System Default</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- VIEW 6: Internal Admin Dashboard For Agency team -->
+  <div id="view-admin-dashboard" class="view-panel">
+    <!-- Admin Tabs Navbar -->
+    <div style="background:var(--bg-card); border-bottom:1px solid var(--border-color); padding: 15px 4%; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:15px;">
+      <h2 style="font-size:22px; font-weight:800; color:var(--color-primary);">CloseMore Agency Admin Console</h2>
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <button class="btn btn-secondary btn-sm" id="btn-adm-tab-overview" onclick="app.switchAdminTab('overview')">Overview</button>
+        <button class="btn btn-secondary btn-sm" id="btn-adm-tab-enrolled" onclick="app.switchAdminTab('enrolled')">Enrolled Accounts</button>
+        <button class="btn btn-secondary btn-sm" id="btn-adm-tab-billing" onclick="app.switchAdminTab('billing')">Billing & Cancel Requests</button>
+        <button class="btn btn-secondary btn-sm active" id="btn-adm-tab-workspace" onclick="app.switchAdminTab('workspace')">Client Detail Editor</button>
+        <button class="btn btn-role-toggle btn-sm" onclick="app.toggleRoleDashboard()">Switch to Client View</button>
+        <button class="btn btn-secondary btn-sm" onclick="app.logout()" style="color:var(--color-danger);">Logout</button>
+      </div>
+    </div>
+
+    <!-- Admin Panel: OVERVIEW -->
+    <div class="admin-panel-tab" id="admin-panel-overview" style="display:none; padding:40px;">
+      <div class="metrics-grid">
+        <div class="card metric-card glass" style="background:var(--bg-card); border:1px solid var(--border-color);">
+          <div class="metric-label">Total Revenue Generated</div>
+          <div class="metric-value" id="adm-stat-revenue">$0.00</div>
+        </div>
+        <div class="card metric-card glass" style="background:var(--bg-card); border:1px solid var(--border-color);">
+          <div class="metric-label">Active Client Accounts</div>
+          <div class="metric-value" id="adm-stat-active">0</div>
+        </div>
+        <div class="card metric-card glass" style="background:var(--bg-card); border:1px solid var(--border-color);">
+          <div class="metric-label">Total Leads Generated</div>
+          <div class="metric-value" id="adm-stat-leads">0</div>
+        </div>
+        <div class="card metric-card glass" style="background:var(--bg-card); border:1px solid var(--border-color);">
+          <div class="metric-label">Monthly Projected Revenue</div>
+          <div class="metric-value" id="adm-stat-monthly">$0.00</div>
+        </div>
+      </div>
+      
+      <div class="grid-2">
+        <div class="card panel-card glass" style="background:var(--bg-card); border:1px solid var(--border-color);">
+          <div class="panel-title">Recent Signups</div>
+          <table style="width:100%; border-collapse:collapse; text-align:left; font-size:13px;">
+            <thead>
+              <tr style="border-bottom:1px solid var(--border-color); color:var(--color-text-secondary);">
+                <th style="padding:12px 10px;">Name</th>
+                <th style="padding:12px 10px;">Email</th>
+                <th style="padding:12px 10px;">Signup Date</th>
+              </tr>
+            </thead>
+            <tbody id="adm-table-recent-signups">
+              <!-- Loaded dynamically -->
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="card panel-card glass" style="background:var(--bg-card); border:1px solid var(--border-color);">
+          <div class="panel-title">Recent Payments</div>
+          <table style="width:100%; border-collapse:collapse; text-align:left; font-size:13px;">
+            <thead>
+              <tr style="border-bottom:1px solid var(--border-color); color:var(--color-text-secondary);">
+                <th style="padding:12px 10px;">Client</th>
+                <th style="padding:12px 10px;">Amount</th>
+                <th style="padding:12px 10px;">Date</th>
+              </tr>
+            </thead>
+            <tbody id="adm-table-recent-payments">
+              <!-- Loaded dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Admin Panel: ENROLLED ACCOUNTS -->
+    <div class="admin-panel-tab" id="admin-panel-enrolled" style="display:none; padding:40px;">
+      <div class="card panel-card glass" style="background:var(--bg-card); border:1px solid var(--border-color); overflow-x:auto;">
+        <div class="panel-title">Enrolled Client Directory Table</div>
+        <table style="width:100%; border-collapse:collapse; text-align:left; font-size:12px; min-width:1400px;">
+          <thead>
+            <tr style="border-bottom:2px solid var(--border-color); color:var(--color-text-secondary); background:var(--bg-secondary);">
+              <th style="padding:12px 10px;">Name</th>
+              <th style="padding:12px 10px;">Email</th>
+              <th style="padding:12px 10px;">Phone</th>
+              <th style="padding:12px 10px;">Plan</th>
+              <th style="padding:12px 10px;">Billing Status</th>
+              <th style="padding:12px 10px;">Signup Date</th>
+              <th style="padding:12px 10px;">Lead Notif. Email</th>
+              <th style="padding:12px 10px;">Lead Notif. Phone</th>
+              <th style="padding:12px 10px;">Spend Budget</th>
+              <th style="padding:12px 10px;">States Excluded</th>
+              <th style="padding:12px 10px;">Form Configuration</th>
+              <th style="padding:12px 10px;">Total Leads</th>
+              <th style="padding:12px 10px;">Opportunities</th>
+              <th style="padding:12px 10px;">Signup Source</th>
+            </tr>
+          </thead>
+          <tbody id="adm-table-enrolled-accounts">
+            <!-- Loaded dynamically -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Admin Panel: BILLING & CANCEL REQUESTS -->
+    <div class="admin-panel-tab" id="admin-panel-billing" style="display:none; padding:40px;">
+      <div class="grid-2" style="margin-bottom:30px;">
+        <div class="card panel-card glass" style="background:var(--bg-card); border:1px solid var(--border-color);">
+          <div class="panel-title">Active Subscriptions Overview</div>
+          <table style="width:100%; border-collapse:collapse; text-align:left; font-size:13px;">
+            <thead>
+              <tr style="border-bottom:1px solid var(--border-color); color:var(--color-text-secondary);">
+                <th style="padding:12px 10px;">Client</th>
+                <th style="padding:12px 10px;">Plan</th>
+                <th style="padding:12px 10px;">Billing Status</th>
+                <th style="padding:12px 10px;">Renewal Date</th>
+              </tr>
+            </thead>
+            <tbody id="adm-table-billing-active">
+              <!-- Loaded dynamically -->
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="card panel-card glass" style="background:var(--bg-card); border:1px solid var(--border-color);">
+          <div class="panel-title">Cancellation & Refund Requests</div>
+          <table style="width:100%; border-collapse:collapse; text-align:left; font-size:13px;">
+            <thead>
+              <tr style="border-bottom:1px solid var(--border-color); color:var(--color-text-secondary);">
+                <th style="padding:12px 10px;">Client</th>
+                <th style="padding:12px 10px;">Plan Type</th>
+                <th style="padding:12px 10px;">Notice Status</th>
+                <th style="padding:12px 10px;">Action Fee</th>
+              </tr>
+            </thead>
+            <tbody id="adm-table-billing-cancels">
+              <!-- Loaded dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      <div class="card panel-card glass" style="background:var(--bg-card); border:1px solid var(--border-color);">
+        <div class="panel-title">Failed Payments Log (Simulation)</div>
+        <table style="width:100%; border-collapse:collapse; text-align:left; font-size:13px;">
+          <thead>
+            <tr style="border-bottom:1px solid var(--border-color); color:var(--color-text-secondary);">
+              <th style="padding:12px 10px;">Client</th>
+              <th style="padding:12px 10px;">Attempt Date</th>
+              <th style="padding:12px 10px;">Plan Price</th>
+              <th style="padding:12px 10px;">Error Message</th>
+            </tr>
+          </thead>
+          <tbody id="adm-table-billing-failed">
+            <tr style="border-bottom:1px solid rgba(0,0,0,0.03);">
+              <td style="padding:10px;">David Chen</td>
+              <td style="padding:10px;">May 24, 2026</td>
+              <td style="padding:10px;">$1,750.00</td>
+              <td style="padding:10px; color:var(--color-danger);">Card Declined: Insufficient Funds</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Admin Panel: WORKSPACE (The client list & editor view) -->
+    <div class="admin-panel-tab active" id="admin-panel-workspace">
+      <div class="admin-layout">
+        <!-- Admin Sidebar Directory of Clients -->
+        <aside class="admin-sidebar" style="border-top:none;">
+          <div class="admin-sidebar-header">Select Client Profile:</div>
+          <div class="admin-client-list" id="admin-clients-list-box">
+            <!-- Client list items injected dynamically -->
+          </div>
+        </aside>
+
+        <!-- Admin Details & Management Workspace -->
+        <main class="admin-content">
+          <div id="admin-no-client-selected" style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:100%; color:var(--color-text-muted);">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-bottom:16px;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <h3>Select a client from the sidebar directory to review onboarding and adjust statistics</h3>
+          </div>
+
+          <!-- Selected Client Dashboard Workspace -->
+          <div class="admin-client-details" id="admin-details-panel">
+            <div class="portal-header" style="border-bottom:1px solid var(--border-color); padding-bottom: 20px; margin-bottom: 30px;">
+              <div>
+                <h2 style="font-size:26px;" id="admin-c-name">Loading Client...</h2>
+                <p style="color:var(--color-text-secondary); font-size:13px;" id="admin-c-email">email@agency.com</p>
+              </div>
+              
+              <div style="display:flex; gap:10px;">
+                <select id="admin-c-status-select" onchange="app.adminChangeStatus(this.value)" style="width:auto; padding:6px 12px; border-radius: var(--radius-sm);">
+                  <option value="Active">Active</option>
+                  <option value="Pending Payment">Pending Payment</option>
+                  <option value="Cancelled">Cancelled</option>
+                </select>
+                <button class="btn btn-secondary btn-sm" onclick="app.adminDeleteClient()" style="color:var(--color-text-primary); background:rgba(239, 68, 68, 0.1); border-color: rgba(239, 68, 68, 0.3)">Delete Client</button>
+              </div>
+            </div>
+
+            <!-- Onboarding Details & Configuration -->
+            <div class="card panel-card glass" style="margin-bottom:30px; background:var(--bg-card); border:1px solid var(--border-color);">
+              <div class="panel-title">Onboarding Details & Configuration</div>
+              <div class="admin-detail-grid">
+                <div>
+                  <p style="margin-bottom:10px;"><strong>Work Phone:</strong> <span id="admin-c-phone">Loading...</span></p>
+                  <p style="margin-bottom:10px;"><strong>Monthly Ad Spend Budget:</strong> <span id="admin-c-budget">Loading...</span></p>
+                  <p style="margin-bottom:10px;"><strong>Conversion Goal:</strong> <span id="admin-c-goal">Loading...</span></p>
+                  <p style="margin-bottom:10px;"><strong>Signup Source (Survey):</strong> <span id="admin-c-source">Loading...</span></p>
+                  <p style="margin-bottom:10px;"><strong>Revenue Generated:</strong> <strong style="color:var(--color-success);" id="admin-c-revenue">$0.00</strong></p>
+                </div>
+                <div>
+                  <p style="margin-bottom:10px;"><strong>States Excluded (NOT licensed in):</strong></p>
+                  <div style="padding:10px; background:var(--bg-secondary); border:1px solid var(--border-color); border-radius:4px; font-size:13px; margin-bottom:15px;" id="admin-c-restricted">None</div>
+
+                  <p style="margin-bottom:10px;"><strong>Lead Notification Routing Settings:</strong></p>
+                  <div style="padding:10px; background:var(--bg-secondary); border:1px solid var(--border-color); border-radius:4px; font-size:13px;">
+                    <p style="margin-bottom:5px;"><strong>Email:</strong> <span id="admin-c-notif-email">Loading...</span></p>
+                    <p><strong>Phone:</strong> <span id="admin-c-notif-phone">Loading...</span></p>
+                  </div>
+                </div>
+              </div>
+              
+              <div style="border-top:1px solid var(--border-color); padding-top:20px; margin-top:10px;">
+                <h4 style="font-size:14px; margin-bottom:10px; color:var(--color-text-secondary);">Selected Lead Form Optional Fields:</h4>
+                <div id="admin-c-form-fields" style="display:flex; gap:10px; flex-wrap:wrap; font-size:12px;">
+                  <!-- Chosen checkboxes list -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Adjust Leads Statistics & Stripe Billing Status -->
+            <div class="grid-2" style="margin-bottom:30px;">
+              <!-- Performance Metrics Adjuster -->
+              <div class="card panel-card glass" style="background:var(--bg-card); border:1px solid var(--border-color);">
+                <div class="panel-title">Performance Metrics Editor</div>
+                <form id="admin-metrics-form" onsubmit="app.adminSaveMetrics(event)">
+                  <div class="admin-form-row">
+                    <div class="admin-form-group">
+                      <label for="adm-leads">Leads Generated</label>
+                      <input type="number" id="adm-leads" required>
+                    </div>
+                    <div class="admin-form-group">
+                      <label for="adm-appointments">Appointments Booked</label>
+                      <input type="number" id="adm-appointments" required>
+                    </div>
+                  </div>
+                  <div class="admin-form-row">
+                    <div class="admin-form-group">
+                      <label for="adm-spend">Ad Spend ($)</label>
+                      <input type="number" id="adm-spend" required>
+                    </div>
+                    <div class="admin-form-group">
+                      <label for="adm-cpl">Cost Per Lead ($)</label>
+                      <input type="number" step="0.01" id="adm-cpl" required>
+                    </div>
+                  </div>
+                  <div class="admin-form-group">
+                    <label for="adm-cpbc">Cost Per Booked Call ($)</label>
+                    <input type="number" step="0.01" id="adm-cpbc" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary" style="width:100%;">Apply Performance Stats</button>
+                </form>
+              </div>
+
+              <!-- Onboarding Checklist & Stripe Billing Detail -->
+              <div class="card panel-card glass" style="background:var(--bg-card); border:1px solid var(--border-color);">
+                <div class="panel-title">Billing & Onboarding Admin</div>
+                <p style="margin-bottom:15px;"><strong>Subscription Plan:</strong> <span id="admin-c-plan">Loading...</span></p>
+                <p style="margin-bottom:20px;"><strong>Stripe Billing Status:</strong> <span class="status-badge status-active" id="admin-stripe-status">Paid</span></p>
+                
+                <div style="border-top: 1px solid var(--border-color); padding-top:20px;">
+                  <h4 style="font-size:14px; margin-bottom:12px;">Toggle Client Checklist Tasks:</h4>
+                  <div id="admin-checklist-checkboxes-box">
+                    <!-- Admin togglable tasks -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Campaign Notes & Messages Workspace -->
+            <div class="grid-2">
+              <!-- Campaign Notes -->
+              <div class="card panel-card glass" style="background:var(--bg-card); border:1px solid var(--border-color);">
+                <div class="panel-title">Private Campaign Notes</div>
+                <textarea id="admin-campaign-notes" rows="12" style="font-size:13px; margin-bottom:15px;" placeholder="Add internal details regarding client's search criteria, GHL token keys, and custom lander modifications..."></textarea>
+                <button class="btn btn-secondary" style="width:100%;" onclick="app.adminSaveNotes()">Save Private Notes</button>
+              </div>
+
+              <!-- Admin Reply Support chat -->
+              <div class="card panel-card glass" style="background:var(--bg-card); border:1px solid var(--border-color);">
+                <div class="panel-title">Support Communication Center</div>
+                <div class="chat-container">
+                  <div class="chat-history" id="admin-chat-history">
+                    <!-- Message logs for this client -->
+                  </div>
+                  <form onsubmit="app.sendChatMessage(event, 'admin')">
+                    <div class="chat-input-wrapper">
+                      <input type="text" id="admin-chat-input" placeholder="Write reply to client..." required>
+                      <button type="submit" class="btn btn-primary">Reply</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Team Internal Tasks List -->
+            <div class="card panel-card glass" style="margin-top:30px; background:var(--bg-card); border:1px solid var(--border-color);">
+              <div class="panel-title">
+                <span>Team Tasks Checklist (Internal Only)</span>
+                <button class="btn btn-secondary btn-sm" onclick="app.adminAddTeamTask()">+ Add Team Task</button>
+              </div>
+              <div id="admin-team-tasks-box">
+                <!-- Team items populated dynamically -->
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+  <!-- Floating Survey Modal for First Login Experience -->
+  <div class="modal-overlay" id="first-login-survey-modal" style="display:none;">
+    <div class="modal-content">
+      <h3 class="modal-title">Welcome to CloseMore!</h3>
+      <p class="modal-desc">To help us optimize your client onboarding, please let us know:</p>
+      
+      <form onsubmit="app.submitFirstLoginSurvey(event)">
+        <div class="auth-form-group">
+          <label style="font-weight:600; margin-bottom:15px; display:block;">How did you hear about us?</label>
+          <div style="display:flex; flex-direction:column; gap:12px;">
+            <label class="option-card" style="padding: 12px 16px;">
+              <input type="radio" name="survey-source" value="Google" required style="width:18px; height:18px;">
+              <span>Google</span>
+            </label>
+            <label class="option-card" style="padding: 12px 16px;">
+              <input type="radio" name="survey-source" value="Facebook / Instagram" style="width:18px; height:18px;">
+              <span>Facebook / Instagram</span>
+            </label>
+            <label class="option-card" style="padding: 12px 16px;">
+              <input type="radio" name="survey-source" value="Referral" style="width:18px; height:18px;">
+              <span>Referral</span>
+            </label>
+            <label class="option-card" style="padding: 12px 16px;">
+              <input type="radio" name="survey-source" value="Other" style="width:18px; height:18px;">
+              <span>Other</span>
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; margin-top:20px; padding:12px;">Submit & Continue</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
